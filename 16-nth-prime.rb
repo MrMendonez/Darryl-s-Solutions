@@ -25,16 +25,15 @@ end
 def nth_prime(n)
   prime_numbers = []
   i = 2
-  while i < n
+  until prime_numbers.length > n
     if is_prime?(i) == true
       prime_numbers << i
-      puts i
-      i += 1
     end
+    i += 1
   end
-  puts prime_numbers
-  puts prime_numbers[n]
-  result = prime_numbers[n]
+  p prime_numbers
+  result = prime_numbers[n-1]       # [n-1] because .length is greater
+  p result                          #   than index by 1.
   return result
 end
 
