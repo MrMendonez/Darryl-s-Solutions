@@ -16,7 +16,7 @@ def greatest_common_factor(number1, number2)
 		i += 1
 	end
 	puts
-	puts( "The factors of number1 are #{factors_of_n1}" )
+	puts( "The factors of #{number1} are #{factors_of_n1}" )
 	i = 1
 	while i <= number2
 		if number2 % i == 0
@@ -24,7 +24,7 @@ def greatest_common_factor(number1, number2)
 		end
 		i += 1
 	end
-	puts( "The factors of number2 are #{factors_of_n2}" )
+	puts( "The factors of #{number2} are #{factors_of_n2}" )
 	i = 0
 	n = 0
 	cf = []
